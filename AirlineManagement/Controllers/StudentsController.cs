@@ -6,10 +6,10 @@ namespace AirlineManagement.Controllers
 {
     public class StudentsController : Controller
     {
-        private UnitOfWork _unitofWork;
+        private IUnitOfWork _unitofWork;
 
 
-        public StudentsController(UnitOfWork unitOfWork)
+        public StudentsController(IUnitOfWork unitOfWork)
         {
             _unitofWork = unitOfWork;
         }
